@@ -1,0 +1,2086 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>SmartShade パートナー募集LP</title>
+  <style>
+    :root {
+      --slate: #14212A;
+      --ink: #182831;
+      --muted: #5E7079;
+      --cool: #F3F6F7;
+      --teal: #159AA6;
+      --teal-bright: #2AC6D2;
+      --gold: #C49A4A;
+      --gold-bright: #E2BE72;
+      --white: #FFFFFF;
+      --line: rgba(20, 33, 42, .14);
+      --shadow: 0 18px 50px rgba(20, 33, 42, .12);
+      --radius: 8px;
+      --heading: "Zen Kaku Gothic New", "Noto Sans JP", system-ui, sans-serif;
+      --body: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --latin: "Space Grotesk", "Inter", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #E7ECEF;
+      font-family: var(--body);
+      line-height: 1.78;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    :focus-visible {
+      outline: 3px solid var(--gold-bright);
+      outline-offset: 4px;
+      border-radius: 6px;
+    }
+
+    .page {
+      width: min(660px, 100%);
+      margin: 0 auto;
+      overflow: hidden;
+      max-width: 100%;
+      background: var(--white);
+      box-shadow: 0 0 0 1px rgba(20, 33, 42, .06), 0 18px 64px rgba(20, 33, 42, .14);
+    }
+    .section {
+      padding: 48px 20px;
+      position: relative;
+    }
+    .section.dark {
+      background: var(--slate);
+      color: var(--white);
+    }
+    .section.gold { background: #F5E5BE; }
+    .section.soft { background: #EEF6F7; }
+    .modes-section {
+      padding-top: 32px;
+    }
+    .inner {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .eyebrow {
+      margin: 0 0 4px;
+      display: inline-flex;
+      width: fit-content;
+      padding: 0;
+      border-radius: 0;
+      background: transparent;
+      color: var(--teal);
+      font-family: var(--latin);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    .dark .eyebrow {
+      background: transparent;
+      color: var(--teal-bright);
+    }
+    .gold .eyebrow {
+      background: transparent;
+      color: #8F6825;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      font-family: var(--heading);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+    h1 {
+      font-size: clamp(2rem, 9vw, 3.65rem);
+      font-weight: 900;
+      max-width: 760px;
+    }
+    h2 {
+      font-size: clamp(1.68rem, 6.9vw, 2.48rem);
+      font-weight: 900;
+    }
+    h3 {
+      font-size: 1.16rem;
+      font-weight: 900;
+    }
+    p { margin: 0; }
+    .lead {
+      margin-top: 18px;
+      color: rgba(255,255,255,.82);
+      font-size: 1rem;
+      max-width: 720px;
+    }
+    .mobile-break { display: none; }
+    .headline-break { display: block; }
+    .headline-sub {
+      display: block;
+      margin-top: .16em;
+      font-size: .64em;
+      line-height: 1.25;
+      white-space: nowrap;
+    }
+    .headline-kicker {
+      display: block;
+      margin-bottom: .18em;
+      font-size: .64em;
+      line-height: 1.25;
+    }
+    .headline-em {
+      display: block;
+      color: var(--teal);
+      font-size: 1.12em;
+    }
+    .dark .headline-em { color: var(--gold-bright); }
+    .headline-compact {
+      font-size: clamp(1.1rem, 5.1vw, 2.2rem);
+      white-space: nowrap;
+    }
+    .section:not(.dark) .lead { color: var(--muted); }
+    .section-title {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 24px;
+      text-align: center;
+      justify-items: center;
+    }
+    .section-title.modes-title-block {
+      gap: 7px;
+      margin-bottom: 18px;
+    }
+    .section-title p {
+      color: var(--muted);
+      max-width: 780px;
+      text-align: left;
+    }
+    .dark .section-title p { color: rgba(255,255,255,.72); }
+    .cta-display {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 12px 18px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 4px;
+      background: var(--teal-bright);
+      color: var(--slate);
+      font-weight: 900;
+      box-shadow: 0 10px 0 rgba(0,0,0,.16);
+      user-select: text;
+    }
+    .cta-display.gold-cta {
+      background: var(--gold-bright);
+      box-shadow: 0 10px 0 rgba(0,0,0,.18);
+    }
+    .sub-nav {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      color: rgba(255,255,255,.86);
+      font-weight: 800;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+    }
+
+    .hero {
+      min-height: auto;
+      display: grid;
+      align-items: center;
+      padding: 0;
+      background: var(--slate);
+      color: var(--white);
+    }
+    .hero-grid {
+      display: grid;
+      gap: 28px;
+    }
+    .fv-poster {
+      position: relative;
+      display: grid;
+      gap: 18px;
+      padding: 0 0 24px;
+      border-radius: 0;
+      background: var(--slate);
+      overflow: hidden;
+    }
+    .fv-poster > * {
+      position: relative;
+      z-index: 1;
+    }
+    .fv-obi {
+      margin: 0;
+      padding: 8px 14px;
+      background: var(--gold-bright);
+      color: var(--slate);
+      text-align: center;
+      font-weight: 900;
+      line-height: 1.35;
+      font-size: .86rem;
+    }
+    .fv-copy-wrap {
+      display: grid;
+      gap: 14px;
+      padding: 22px 20px 0;
+      text-align: center;
+      justify-items: center;
+    }
+    .fv-title {
+      display: grid;
+      gap: 4px;
+      margin-top: 2px;
+      font-family: var(--heading);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .fv-title-main {
+      display: block;
+      font-size: clamp(1.62rem, 7.4vw, 2.9rem);
+      white-space: nowrap;
+    }
+    .fv-bottom-profit {
+      margin: 0 20px;
+      color: var(--white);
+      font-family: var(--heading);
+      font-size: clamp(1.42rem, 6.6vw, 2.45rem);
+      font-weight: 900;
+      line-height: 1.18;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .fv-title-accent {
+      display: block;
+      color: var(--gold-bright);
+      font-size: clamp(1.86rem, 8.9vw, 3.45rem);
+    }
+    .fv-title-orange {
+      display: inline;
+      color: var(--white);
+    }
+    .fv-title-inline {
+      display: block;
+      color: var(--white);
+      font-size: clamp(1.72rem, 8.2vw, 3.05rem);
+    }
+    .fv-sub-copy {
+      width: 100%;
+      padding: 11px 12px;
+      border: 1px solid rgba(42,198,210,.45);
+      border-radius: var(--radius);
+      background: rgba(42,198,210,.12);
+      color: rgba(255,255,255,.9);
+      font-family: var(--heading);
+      font-size: 1rem;
+      font-weight: 900;
+      line-height: 1.45;
+    }
+    .fv-photo {
+      position: relative;
+      margin: 0 20px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: #D8E0E2;
+      border: 1px solid rgba(255,255,255,.18);
+    }
+    .fv-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .fv-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity .5s ease;
+    }
+    .fv-slide.is-active {
+      opacity: 1;
+    }
+    .fv-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .fv-slide-label {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      padding: 9px 10px;
+      border-radius: 4px;
+      background: rgba(20,33,42,.84);
+      color: var(--white);
+      font-family: var(--heading);
+      font-size: .9rem;
+      font-weight: 900;
+      line-height: 1.35;
+      text-align: center;
+    }
+    .fv-close {
+      margin: -2px 20px 0;
+      color: rgba(255,255,255,.92);
+      font-family: var(--heading);
+      font-size: 1.04rem;
+      font-weight: 900;
+      line-height: 1.45;
+      text-align: center;
+    }
+    .fv-ticket {
+      display: grid;
+      gap: 3px;
+      margin: 0 20px;
+      padding: 12px;
+      border: 2px solid rgba(196,154,74,.9);
+      border-radius: 4px;
+      background: rgba(255,247,229,.96);
+      color: #402A0F;
+      text-align: center;
+      box-shadow: none;
+    }
+    .fv-ticket b {
+      font-family: var(--latin);
+      font-size: clamp(1.8rem, 9.5vw, 3.05rem);
+      font-weight: 900;
+      line-height: 1;
+      color: #B86F12;
+    }
+    .fv-ticket span {
+      font-weight: 900;
+      line-height: 1.32;
+    }
+    .fv-ticket small {
+      color: #72592E;
+      font-size: .68rem;
+      line-height: 1.35;
+    }
+    .fv-read-more {
+      display: none;
+      gap: 9px;
+      margin: 0 18px;
+    }
+    .fv-read-more div {
+      position: relative;
+      padding: 11px 12px 11px 34px;
+      border-radius: 4px;
+      background: rgba(255,255,255,.1);
+      color: rgba(255,255,255,.86);
+      font-weight: 800;
+      line-height: 1.45;
+      text-align: left;
+    }
+    .fv-read-more div::before {
+      content: "";
+      position: absolute;
+      left: 13px;
+      top: 19px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold-bright);
+    }
+    .hero-actions { display: none; }
+    .hero-proof {
+      display: none;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 26px;
+    }
+    .proof-pill {
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.82);
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .proof-pill strong {
+      display: block;
+      color: var(--gold-bright);
+      font-family: var(--latin);
+      font-size: 1.1rem;
+    }
+
+    .glass-demo {
+      border: 1px solid rgba(20,33,42,.12);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.62);
+      box-shadow: 0 14px 34px rgba(20,33,42,.1);
+      overflow: hidden;
+    }
+    .demo-section {
+      padding-top: 42px;
+      background: var(--white);
+      color: var(--ink);
+    }
+    .demo-title-single {
+      font-size: clamp(1.24rem, 5.3vw, 2.15rem);
+      white-space: nowrap;
+    }
+    .glass-stage {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #D8E0E2;
+      overflow: hidden;
+    }
+    .glass-stage img {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity .32s ease;
+    }
+    .glass-stage img.is-on { opacity: 0; }
+    .glass-demo.is-on .glass-stage img.is-on { opacity: 1; }
+    .glass-demo.is-on .glass-stage img.is-off { opacity: 0; }
+    .demo-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 15px 16px;
+      background: #14212A;
+    }
+    .state-label {
+      color: rgba(255,255,255,.84);
+      font-family: var(--latin);
+      font-size: .86rem;
+      font-weight: 900;
+    }
+    .switch {
+      position: relative;
+      width: 76px;
+      height: 40px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(255,255,255,.18);
+      cursor: pointer;
+    }
+    .switch::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--gold-bright);
+      box-shadow: 0 8px 18px rgba(0,0,0,.24);
+      transition: transform .25s ease, background .25s ease;
+    }
+    .glass-demo.is-on .switch::after {
+      transform: translateX(36px);
+      background: var(--teal-bright);
+    }
+    .placeholder-label {
+      position: absolute;
+      inset: 18px;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      border: 1px dashed rgba(20,33,42,.28);
+      border-radius: var(--radius);
+      background: repeating-linear-gradient(135deg, rgba(255,255,255,.35), rgba(255,255,255,.35) 10px, rgba(20,33,42,.04) 10px, rgba(20,33,42,.04) 20px);
+      color: #41535B;
+      text-align: center;
+      font-weight: 800;
+      line-height: 1.55;
+      z-index: 0;
+    }
+    img.image-missing { opacity: 0 !important; }
+    .grid { display: grid; gap: 18px; }
+    .cards-3 { grid-template-columns: 1fr; }
+    .cards-2 { grid-template-columns: 1fr; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(20,33,42,.08);
+    }
+    .poster-card {
+      position: relative;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .poster-card::before {
+      content: attr(data-num);
+      position: absolute;
+      right: 16px;
+      top: -18px;
+      color: rgba(21,154,166,.09);
+      font-family: var(--latin);
+      font-size: 5.8rem;
+      font-weight: 900;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .poster-card > * {
+      position: relative;
+      z-index: 1;
+    }
+    .market-card {
+      overflow: visible;
+      min-width: 0;
+    }
+    .market-card *,
+    .market-card *::before,
+    .market-card *::after {
+      min-width: 0;
+    }
+    .market-card .card-body {
+      gap: 12px;
+      padding: 20px 18px 18px;
+      width: 100%;
+      overflow: visible;
+    }
+    .market-card h3,
+    .market-card .card-body > p {
+      max-width: 100%;
+      white-space: normal !important;
+      word-break: break-all;
+      overflow-wrap: anywhere;
+      line-break: anywhere;
+    }
+    .market-card .card-body > p {
+      display: block;
+      margin: 0 0 8px;
+      color: rgba(255,255,255,.82);
+      font-size: .96rem;
+      line-height: 1.8;
+      overflow: visible;
+    }
+    .visual-badge-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .fv-poster .visual-badge-row { display: none; }
+    .fv-poster .round-badge {
+      width: 100%;
+      aspect-ratio: auto;
+      min-height: 0;
+      padding: 8px 6px;
+      border-width: 1px;
+      border-radius: 4px;
+      background: rgba(255,255,255,.1);
+      color: rgba(255,255,255,.9);
+      box-shadow: none;
+      line-height: 1.25;
+      font-size: .78rem;
+    }
+    .fv-poster .round-badge span {
+      display: inline;
+      margin-left: .25em;
+      color: var(--gold-bright);
+      font-size: 1em;
+    }
+    .round-badge {
+      display: grid;
+      place-items: center;
+      width: min(160px, 100%);
+      aspect-ratio: 1 / 1;
+      justify-self: center;
+      padding: 16px;
+      border: 3px solid rgba(226,190,114,.9);
+      border-radius: 50%;
+      background: #FFFDF6;
+      color: var(--slate);
+      text-align: center;
+      font-family: var(--heading);
+      font-weight: 900;
+      line-height: 1.3;
+      box-shadow: 0 8px 0 rgba(0,0,0,.15);
+    }
+    .round-badge span {
+      display: block;
+      color: #B86F12;
+      font-size: 1.38rem;
+    }
+    .figure-panel {
+      margin-top: 24px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: #FFF7E5;
+      border: 2px solid rgba(196,154,74,.34);
+      color: #3E2B10;
+      box-shadow: 0 20px 54px rgba(196,154,74,.18);
+    }
+    .figure-panel .figure-main {
+      display: block;
+      margin: 8px 0;
+      font-family: var(--latin);
+      font-size: clamp(2.8rem, 16vw, 5.8rem);
+      font-weight: 900;
+      line-height: .95;
+      color: #B86F12;
+    }
+    .flow-visual {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .flow-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: 14px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.9);
+      border: 1px solid var(--line);
+    }
+    .flow-item b {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--teal);
+      color: var(--white);
+      font-family: var(--latin);
+      font-size: 1.2rem;
+    }
+    .role.partner .flow-item b { background: var(--teal); }
+    .role:not(.partner) .flow-item b { background: var(--gold); }
+    .partner-flow {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+      counter-reset: flow;
+    }
+    .partner-flow-step {
+      position: relative;
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 13px;
+      align-items: center;
+      padding: 15px 15px 15px 14px;
+      border: 1px solid rgba(21,154,166,.2);
+      border-radius: var(--radius);
+      background: #F4FBFC;
+      box-shadow: 0 10px 22px rgba(20,33,42,.06);
+    }
+    .partner-flow-step::after {
+      content: "";
+      position: absolute;
+      left: 40px;
+      bottom: -13px;
+      width: 2px;
+      height: 13px;
+      background: rgba(21,154,166,.28);
+    }
+    .partner-flow-step:last-child::after { display: none; }
+    .partner-flow-step b {
+      display: grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--teal);
+      color: var(--white);
+      font-family: var(--latin);
+      font-size: 1.25rem;
+      font-weight: 900;
+      box-shadow: 0 8px 18px rgba(21,154,166,.24);
+    }
+    .partner-flow-step span {
+      display: inline-flex;
+      width: fit-content;
+      margin-bottom: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(21,154,166,.11);
+      color: var(--teal);
+      font-family: var(--latin);
+      font-size: .72rem;
+      font-weight: 900;
+      letter-spacing: .04em;
+    }
+    .partner-flow-step p {
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--heading);
+      font-size: 1rem;
+      font-weight: 900;
+      line-height: 1.45;
+    }
+    .partner-flow-step.is-partner {
+      border-color: rgba(196,154,74,.42);
+      background: #FFF8E8;
+      box-shadow: 0 14px 34px rgba(184,111,18,.18);
+    }
+    .partner-flow-step.is-partner::after {
+      background: rgba(196,154,74,.36);
+    }
+    .partner-flow-step.is-partner b {
+      position: relative;
+      background: #B86F12;
+      box-shadow: 0 0 0 6px rgba(226,190,114,.2), 0 10px 22px rgba(184,111,18,.28);
+      animation: partnerPulse 2.2s ease-in-out infinite;
+    }
+    .partner-flow-step.is-partner b::after {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      border: 2px solid rgba(226,190,114,.55);
+      border-radius: 50%;
+      opacity: .9;
+      animation: partnerRing 2.2s ease-in-out infinite;
+    }
+    .partner-flow-step.is-partner span {
+      background: rgba(196,154,74,.18);
+      color: #8F6825;
+    }
+    .partner-flow-summary {
+      margin: 20px auto 0;
+      max-width: 560px;
+      color: var(--ink);
+      text-align: center;
+      font-family: var(--heading);
+      font-size: clamp(1.06rem, 4.1vw, 1.45rem);
+      font-weight: 900;
+      line-height: 1.6;
+    }
+    @keyframes partnerPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+    }
+    @keyframes partnerRing {
+      0% { transform: scale(.88); opacity: .82; }
+      70%, 100% { transform: scale(1.18); opacity: 0; }
+    }
+    .card.pad { padding: 22px; }
+    .dark .card {
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.12);
+      color: var(--white);
+      box-shadow: none;
+    }
+    .media {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background: #D8E0E2;
+      overflow: hidden;
+    }
+    .media.no-frame {
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .media.tall { aspect-ratio: 4 / 5; }
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+    }
+    .card-body {
+      padding: 20px;
+      display: grid;
+      gap: 10px;
+    }
+    .card-body p, .card.pad p { color: var(--muted); }
+    .dark .card-body p, .dark .card.pad p { color: rgba(255,255,255,.72); }
+    .mode-slider {
+      position: relative;
+      margin-top: 4px;
+      padding: 0 22px;
+    }
+    .mode-swipe {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(90%, 1fr);
+      gap: 12px;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 2px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .mode-swipe::-webkit-scrollbar { display: none; }
+    .mode-nav {
+      position: absolute;
+      top: 42%;
+      z-index: 5;
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 52px;
+      border: 2px solid rgba(21,154,166,.32);
+      border-radius: 4px;
+      background: rgba(255,255,255,.92);
+      color: var(--slate);
+      font-family: var(--latin);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+      box-shadow: 0 10px 24px rgba(20,33,42,.14);
+      transform: translateY(-50%);
+    }
+    .mode-nav.prev { left: 0; }
+    .mode-nav.next { right: 0; }
+    .mode-nav:focus-visible {
+      outline: 3px solid rgba(42,198,210,.55);
+      outline-offset: 3px;
+    }
+    .mode-card {
+      scroll-snap-align: center;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 14px 34px rgba(20,33,42,.1);
+    }
+    .mode-card .media {
+      aspect-ratio: 16 / 9;
+    }
+    .mode-caption {
+      display: grid;
+      gap: 5px;
+      padding: 15px 16px 17px;
+      background: var(--white);
+    }
+    .mode-caption h3 {
+      font-size: 1.12rem;
+    }
+    .mode-caption p {
+      color: var(--muted);
+      font-size: .94rem;
+      line-height: 1.65;
+    }
+    .mode-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .mode-dot {
+      width: 9px;
+      height: 9px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(20,33,42,.25);
+    }
+    .mode-dot.is-active {
+      width: 22px;
+      border-radius: 999px;
+      background: var(--teal);
+    }
+    .mode-dot:focus-visible {
+      outline: 3px solid rgba(42,198,210,.55);
+      outline-offset: 3px;
+    }
+    .case-examples {
+      margin-top: 8px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .dark .case-examples { border-top-color: rgba(255,255,255,.14); }
+    .case-examples h4 {
+      margin: 0 0 10px;
+      font-family: var(--heading);
+      font-size: .92rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+    .case-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .case-list li {
+      min-height: 38px;
+      display: grid;
+      place-items: center;
+      padding: 8px 6px;
+      border-radius: 4px;
+      background: rgba(21,154,166,.1);
+      color: var(--ink);
+      font-size: .78rem;
+      font-weight: 900;
+      line-height: 1.3;
+      text-align: center;
+    }
+    .dark .case-list li {
+      background: rgba(255,255,255,.1);
+      color: rgba(255,255,255,.9);
+    }
+    .case-marquee {
+      position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;
+      margin-top: 12px;
+      border-radius: 4px;
+      cursor: grab;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-x;
+    }
+    .case-marquee::-webkit-scrollbar {
+      display: none;
+    }
+    .case-marquee:active {
+      cursor: grabbing;
+    }
+    .case-marquee::before,
+    .case-marquee::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 4;
+      width: 42px;
+      pointer-events: none;
+    }
+    .case-marquee::before {
+      left: 0;
+      background: linear-gradient(90deg, var(--white), rgba(255,255,255,0));
+    }
+    .case-marquee::after {
+      right: 0;
+      background: linear-gradient(270deg, var(--white), rgba(255,255,255,0));
+    }
+    .dark .case-marquee::before {
+      background: linear-gradient(90deg, var(--slate), rgba(20,33,42,0));
+    }
+    .dark .case-marquee::after {
+      background: linear-gradient(270deg, var(--slate), rgba(20,33,42,0));
+    }
+    .case-track {
+      display: flex;
+      width: max-content;
+      gap: 6px;
+      will-change: auto;
+    }
+    .case-item {
+      position: relative;
+      flex: 0 0 min(76vw, 260px);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      border-radius: 4px;
+      background: #D8E0E2;
+      box-shadow: 0 12px 28px rgba(0,0,0,.18);
+    }
+    .case-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .case-item figcaption {
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      z-index: 2;
+      padding: 9px 10px;
+      border-radius: 4px;
+      background: rgba(20,33,42,.82);
+      color: var(--white);
+      font-family: var(--heading);
+      font-size: .88rem;
+      font-weight: 900;
+      line-height: 1.25;
+      text-align: center;
+    }
+    .markets-closing {
+      margin: 28px auto 0;
+      max-width: 560px;
+      color: var(--white);
+      font-family: var(--heading);
+      font-size: clamp(1.22rem, 5.4vw, 2rem);
+      font-weight: 900;
+      line-height: 1.45;
+      text-align: center;
+    }
+    .number {
+      color: var(--teal);
+      font-family: var(--latin);
+      font-weight: 900;
+      font-size: .9rem;
+    }
+    .gold .number { color: #8F6825; }
+    .quote-block {
+      display: grid;
+      gap: 22px;
+      align-items: center;
+      text-align: center;
+    }
+    .quote-block .list {
+      text-align: left;
+    }
+    .quote-block-wide {
+      display: grid;
+      gap: 22px;
+      text-align: center;
+    }
+    .media.wide {
+      aspect-ratio: 16 / 9;
+      box-shadow: 0 24px 70px rgba(0,0,0,.24);
+    }
+    .quote {
+      font-family: var(--heading);
+      font-size: clamp(1.6rem, 7vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.22;
+    }
+    .list {
+      display: grid;
+      gap: 14px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .list li {
+      padding: 16px 16px 16px 18px;
+      border-left: 5px solid var(--teal-bright);
+      background: rgba(255,255,255,.08);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .list strong { display: block; margin-bottom: 4px; }
+
+    .benefit-card {
+      position: relative;
+      background: var(--white);
+      border: 2px solid rgba(196,154,74,.46);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 10px 0 rgba(99,70,17,.13);
+      overflow: hidden;
+    }
+    .benefit-card::before {
+      content: attr(data-num);
+      position: absolute;
+      right: 14px;
+      top: -22px;
+      color: rgba(196,154,74,.16);
+      font-family: var(--latin);
+      font-size: 6.5rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .benefit-card > * { position: relative; z-index: 1; }
+    .benefit-card h3 { margin-bottom: 12px; }
+    .benefit-card p { color: #4E4030; }
+    .profit {
+      display: block;
+      margin: 14px 0;
+      padding: 16px;
+      border-radius: var(--radius);
+      background: #FFFDF6;
+      color: #4A3412;
+      font-family: var(--heading);
+      font-size: 1.1rem;
+      font-weight: 900;
+      line-height: 1.55;
+    }
+    .note {
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.7;
+    }
+
+    .role-grid {
+      display: grid;
+      gap: 16px;
+    }
+    .role {
+      position: relative;
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--white);
+    }
+    .role.partner { background: #E8F8FA; border-color: rgba(21,154,166,.25); }
+    .role h3 { margin-bottom: 12px; }
+    .steps {
+      margin: 0;
+      padding-left: 1.25rem;
+      color: var(--muted);
+    }
+    .steps li { margin: 8px 0; }
+    .center-callout {
+      margin-top: 18px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: #101B22;
+      color: var(--white);
+      text-align: center;
+      font-family: var(--heading);
+      font-size: clamp(1.25rem, 5vw, 2rem);
+      font-weight: 900;
+      line-height: 1.35;
+    }
+    .two-tone {
+      display: grid;
+      gap: 14px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: transparent;
+    }
+    .two-tone > div {
+      padding: 20px;
+      border: 2px solid var(--slate);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .two-tone .cool-side {
+      background: var(--white);
+    }
+    .two-tone .warm-side {
+      background: var(--white);
+    }
+    .two-tone h3 {
+      color: #D3208F;
+    }
+    .feature-list {
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      counter-reset: feature;
+    }
+    .feature-list li {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 10px;
+      align-items: start;
+      color: var(--ink);
+      font-weight: 800;
+      line-height: 1.55;
+    }
+    .feature-list li::before {
+      counter-increment: feature;
+      content: counter(feature);
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--slate);
+      color: var(--white);
+      font-family: var(--latin);
+      font-size: .86rem;
+      font-weight: 900;
+    }
+    .spec-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .spec {
+      padding: 17px 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .spec b {
+      display: block;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    .spec span {
+      font-family: var(--latin);
+      font-size: 1.12rem;
+      font-weight: 900;
+      color: var(--slate);
+    }
+    .trust-panel {
+      display: grid;
+      gap: 18px;
+      padding: 20px;
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 20px 54px rgba(0,0,0,.22);
+    }
+    .trust-photo {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      border-radius: 4px;
+      background: #D8E0E2;
+    }
+    .trust-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .trust-photo-caption {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      padding: 12px 14px;
+      border-radius: 4px;
+      background: rgba(20,33,42,.76);
+      color: var(--white);
+      font-family: var(--heading);
+      font-size: clamp(1.05rem, 4.4vw, 1.45rem);
+      font-weight: 900;
+      line-height: 1.35;
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+    .trust-copy {
+      display: grid;
+      gap: 10px;
+    }
+    .trust-copy h3 {
+      font-size: clamp(1.15rem, 4.6vw, 1.55rem);
+      line-height: 1.35;
+    }
+    .trust-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 700;
+      line-height: 1.75;
+    }
+    .trust-spec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .trust-spec {
+      padding: 14px 12px;
+      border: 1px solid rgba(20,33,42,.16);
+      border-radius: 4px;
+      background: #F7FAFB;
+    }
+    .trust-spec b {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: .78rem;
+      line-height: 1.35;
+    }
+    .trust-spec span {
+      color: var(--slate);
+      font-family: var(--latin);
+      font-size: clamp(1rem, 4.2vw, 1.22rem);
+      font-weight: 900;
+      line-height: 1.25;
+    }
+    .trust-checks {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .trust-checks li {
+      padding: 11px 13px;
+      border-radius: 4px;
+      background: #FFF8E8;
+      color: #4A3412;
+      font-family: var(--heading);
+      font-weight: 900;
+      line-height: 1.45;
+    }
+    .trust-section {
+      background: var(--slate);
+      color: var(--white);
+    }
+    .trust-section .section-title h2 {
+      color: var(--white);
+    }
+    .trust-section .section-title .eyebrow {
+      background: transparent;
+      color: var(--teal-bright);
+    }
+    .trust-section .trust-copy p {
+      color: var(--muted);
+    }
+    .trust-section .invisible-title {
+      color: var(--white);
+    }
+    .trust-section .note {
+      color: rgba(255,255,255,.7);
+    }
+    .invisible-title {
+      margin-top: 30px;
+      font-size: clamp(1.35rem, 5.7vw, 2rem);
+      line-height: 1.25;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .invisible-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .invisible-item {
+      display: grid;
+      gap: 6px;
+      padding: 10px 6px 8px;
+      border: 1px solid rgba(20,33,42,.16);
+      border-radius: 4px;
+      background: #FAFBFC;
+      text-align: center;
+      align-content: start;
+    }
+    .invisible-item h4 {
+      margin: 0;
+      color: var(--slate);
+      font-size: clamp(.92rem, 3.5vw, 1.1rem);
+      line-height: 1.25;
+    }
+    .invisible-item strong {
+      color: #D3208F;
+      font-family: var(--latin);
+      font-size: clamp(1.28rem, 5vw, 1.62rem);
+      line-height: 1;
+    }
+    .invisible-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(.72rem, 2.9vw, .82rem);
+      font-weight: 800;
+      line-height: 1.38;
+    }
+    .invisible-image {
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      width: min(100%, 122px);
+      margin: 4px auto 0;
+      border-radius: 4px;
+      background: #F3F6F7;
+    }
+    .invisible-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .dummy-illust {
+      position: relative;
+      height: 120px;
+      margin-top: 8px;
+      border-radius: 4px;
+      background:
+        linear-gradient(90deg, transparent 46%, rgba(20,33,42,.16) 47%, rgba(20,33,42,.16) 49%, transparent 50%),
+        repeating-linear-gradient(135deg, rgba(21,154,166,.1), rgba(21,154,166,.1) 8px, rgba(211,32,143,.1) 8px, rgba(211,32,143,.1) 16px);
+    }
+    .dummy-illust::after {
+      content: "画像素材差し込み予定";
+      position: absolute;
+      inset: auto 12px 12px;
+      padding: 6px 8px;
+      border-radius: 4px;
+      background: rgba(255,255,255,.86);
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .objections {
+      display: grid;
+      gap: 12px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      padding: 0;
+      box-shadow: 0 8px 18px rgba(20,33,42,.04);
+    }
+    summary {
+      position: relative;
+      cursor: pointer;
+      padding: 18px 48px 18px 20px;
+      font-weight: 900;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      display: grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--slate);
+      color: var(--white);
+      font-family: var(--latin);
+      font-size: 1rem;
+      line-height: 1;
+      transform: translateY(-50%);
+    }
+    details[open] summary::after {
+      content: "-";
+    }
+    details p {
+      padding: 0 18px 18px;
+      color: var(--muted);
+    }
+    .q-prefix,
+    .a-prefix {
+      color: var(--teal);
+      font-family: var(--latin);
+      font-weight: 900;
+    }
+    .a-prefix { margin-right: .35em; }
+    .objection-section {
+      background: var(--white);
+    }
+    .objection-section details {
+      overflow: hidden;
+      border-color: rgba(20,33,42,.14);
+      background: var(--white);
+    }
+    .objection-section summary {
+      background: var(--slate);
+      color: var(--white);
+    }
+    .objection-section summary::after {
+      background: rgba(255,255,255,.16);
+      color: var(--white);
+    }
+    .objection-section .q-prefix {
+      color: var(--teal-bright);
+    }
+    .objection-section .a-prefix {
+      color: var(--teal);
+    }
+    .faq-grid {
+      display: grid;
+      gap: 12px;
+    }
+    .footer-box {
+      display: grid;
+      gap: 18px;
+      padding: 26px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 4px;
+      background: rgba(255,255,255,.07);
+      text-align: center;
+      justify-items: center;
+    }
+    .footer-meta {
+      margin-top: 22px;
+      color: rgba(255,255,255,.68);
+      font-size: .9rem;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (min-width: 720px) {
+      .section { padding: 58px 36px; }
+      .modes-section { padding-top: 36px; }
+      .visual-badge-row { grid-template-columns: repeat(3, 1fr); }
+      .round-badge { width: min(170px, 100%); }
+      .spec-grid { grid-template-columns: repeat(2, 1fr); }
+      .mode-slider { padding: 0 30px; }
+      .mode-swipe { grid-auto-columns: minmax(56%, 1fr); }
+      .mode-nav { width: 42px; height: 58px; }
+      .case-item { flex-basis: 300px; }
+      .fv-poster { gap: 16px; }
+      .fv-copy-wrap { padding-right: 34px; padding-left: 34px; }
+      .fv-photo,
+      .fv-ticket,
+      .fv-read-more,
+      .fv-poster .visual-badge-row { margin-right: 34px; margin-left: 34px; }
+      .fv-read-more { display: none; }
+      .fv-poster .round-badge { font-size: .9rem; padding: 10px 8px; }
+    }
+
+    @media (min-width: 1020px) {
+      .section { padding: 62px 40px; }
+      .modes-section { padding-top: 38px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+      .case-track {
+        animation: none !important;
+        transform: none !important;
+      }
+      .partner-flow-step.is-partner b,
+      .partner-flow-step.is-partner b::after {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero section dark" aria-labelledby="hero-title">
+      <div class="inner">
+        <div class="fv-poster">
+          <p class="fv-obi">内装・リフォーム会社さま向け 取扱パートナー募集</p>
+          <div class="fv-copy-wrap">
+            <h1 id="hero-title" class="fv-title">
+              <span class="fv-title-inline"><span class="fv-title-orange">高利益率</span>の</span>
+              <span class="fv-title-accent">“窓を使った新商品”</span>
+            </h1>
+          </div>
+          <figure class="fv-photo fv-slider" aria-label="SmartShadeの提案例">
+            <!-- 画像指示: FVスライド1。オフィス向け提案イメージ。高級感のある会議室・役員室。推奨比率 16:9。 -->
+            <div class="fv-slide is-active">
+              <img src="images/reaction-office-wide.jpg" alt="オフィスにSmartShadeを提案するイメージの会議室" loading="eager" decoding="async">
+              <span class="fv-slide-label">オフィスの品格を変えるSmartShade</span>
+            </div>
+            <!-- 画像指示: FVスライド2。店舗向けVision提案イメージ。窓に映像を投影する店舗外観。推奨比率 16:9。 -->
+            <div class="fv-slide">
+              <img src="images/market-storefront-vision.jpg" alt="店舗の窓に映像を投影して集客するSmartShade Visionのイメージ" loading="eager" decoding="async">
+              <span class="fv-slide-label">外に向けて自社PRできるSmartShade Vision</span>
+            </div>
+          </figure>
+          <p class="fv-close">現地調査や施工、アフターフォローも<br>すべて弊社で行います。</p>
+          <div class="fv-ticket" aria-label="利益例">
+            <span>10㎡オフィス案件なら</span>
+            <b>約15〜19万円</b>
+            <span>が御社利益に</span>
+            <small>※例示です。上乗せ幅・最終価格は御社の裁量であり、利益を保証するものではありません。</small>
+          </div>
+          <p class="fv-bottom-profit">提案するだけで儲かる！</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section reveal demo-section" aria-labelledby="demo-title">
+      <div class="inner">
+        <div class="section-title">
+          <p class="eyebrow">TOUCH THE GLASS</p>
+          <h2 id="demo-title" class="demo-title-single">切り替わる窓をまず体験。</h2>
+          <p>OFFからONへ、スイッチひとつで窓の表情が変わります。この“触って分かる変化”が、お客様の反応を引き出す提案材料になります。</p>
+        </div>
+        <div class="glass-demo" id="glassDemo">
+          <div class="glass-stage" aria-live="polite">
+            <!-- 画像指示: OFF状態。同一構図のオフィス会議室、ガラス全面が不透明。推奨比率 16:9。 -->
+            <img class="is-off" src="images/demo-off.png" alt="OFF状態で不透明になったオフィス会議室の調光ガラス" loading="eager" decoding="async">
+            <!-- 画像指示: ON状態。demo-off.pngと同一構図、ガラスが透明で外の景色が見える。推奨比率 16:9。 -->
+            <img class="is-on" src="images/demo-on.png" alt="ON状態で透明になり外の景色が見えるオフィス会議室の調光ガラス" loading="eager" decoding="async">
+          </div>
+          <div class="demo-controls">
+            <span class="state-label" id="stateLabel">OFF / 不透明</span>
+            <button class="switch" id="toggleGlass" type="button" role="switch" aria-checked="false" aria-label="調光ガラスのOFFとONを切り替える"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section modes-section reveal" aria-labelledby="modes-title">
+      <div class="inner">
+        <div class="section-title modes-title-block">
+          <h2 id="modes-title" class="headline-compact">ガラス1枚で、3つの役割。</h2>
+          <p>「魅せる」「隠す」「映す」をスイッチひとつで。<br>オフィスでも店舗でも活きる、汎用性の高い1枚です。</p>
+        </div>
+        <div class="mode-slider">
+          <button class="mode-nav prev" type="button" aria-label="前の役割を見る">‹</button>
+          <div class="mode-swipe" tabindex="0" aria-label="ガラス1枚でできる3つの役割">
+            <article class="mode-card">
+              <div class="media">
+                <!-- 画像指示: 透明モード。昼の歯科クリニック外観、透明な窓から店内が見える。推奨比率 4:3。 -->
+                <img src="images/mode-clear.webp" alt="透明モードで店内が見える歯科クリニックの窓" loading="lazy" decoding="async">
+                <div class="placeholder-label">images/mode-clear.webp<br>透明モード・推奨比率 16:9</div>
+              </div>
+              <div class="mode-caption"><span class="number">01 / CLEAR</span><h3>魅せる（ON／透明）</h3><p>開放感のある透明な窓。空間を広く、明るく見せる提案になります。</p></div>
+            </article>
+            <article class="mode-card">
+              <div class="media">
+                <!-- 画像指示: 不透明モード。同じ歯科クリニック外観、窓が乳白色になり店内が隠れる。推奨比率 4:3。 -->
+                <img src="images/mode-frost.webp" alt="不透明モードで店内が隠れた歯科クリニックの窓" loading="lazy" decoding="async">
+                <div class="placeholder-label">images/mode-frost.webp<br>不透明モード・推奨比率 16:9</div>
+              </div>
+              <div class="mode-caption"><span class="number">02 / FROST</span><h3>隠す（OFF／不透明）</h3><p>一瞬で目隠しに。会議の機密も店内のプライバシーも守れます。</p></div>
+            </article>
+            <article class="mode-card">
+              <div class="media">
+                <!-- 画像指示: 映像投影モード。夜の歯科クリニック外観、窓にPR映像が投影されている。推奨比率 4:3。 -->
+                <img src="images/mode-vision.webp" alt="映像投影モードで歯科クリニックの窓にPR映像が映っている様子" loading="lazy" decoding="async">
+                <div class="placeholder-label">images/mode-vision.webp<br>映像投影モード・推奨比率 16:9</div>
+              </div>
+              <div class="mode-caption"><span class="number">03 / VISION</span><h3>映す（OFF＋投影）</h3><p>窓全体がPR映像の集客装置に。通行人の足を止める提案まで広がります。</p></div>
+            </article>
+          </div>
+          <button class="mode-nav next" type="button" aria-label="次の役割を見る">›</button>
+          <div class="mode-dots" aria-label="表示中の役割">
+            <button class="mode-dot is-active" type="button" aria-label="1つ目の役割を見る"></button>
+            <button class="mode-dot" type="button" aria-label="2つ目の役割を見る"></button>
+            <button class="mode-dot" type="button" aria-label="3つ目の役割を見る"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark reveal" aria-labelledby="markets-title">
+      <div class="inner">
+        <div class="section-title">
+          <p class="eyebrow">TWO MARKETS</p>
+          <h2 id="markets-title" class="headline-compact">1つの商材で、2つの売り先。</h2>
+          <p>特に移転・新店舗の開業は、目新しい提案が最も刺さる瞬間です。</p>
+        </div>
+        <div class="grid cards-2">
+          <article class="card poster-card market-card" data-num="01">
+            <div class="card-body">
+              <span class="number">OFFICE</span>
+              <h3>オフィス改装 ＝ "格"を売る</h3>
+              <p>役員室・応接室・エントランスに。"品格ある個室"に変わる演出で、経営者の見栄と機密を同時に満たします。</p>
+              <div class="case-examples">
+                <h4>導入事例・提案先</h4>
+                <div class="case-marquee" tabindex="0" aria-label="オフィス改装の導入事例">
+                  <div class="case-track">
+                    <figure class="case-item"><img src="images/case-office-ceo.jpg" alt="社長室へのSmartShade導入イメージ" loading="lazy" decoding="async"><figcaption>社長室</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-office-executive.jpg" alt="役員室へのSmartShade導入イメージ" loading="lazy" decoding="async"><figcaption>役員室</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-office-meeting.jpg" alt="会議室へのSmartShade導入イメージ" loading="lazy" decoding="async"><figcaption>会議室</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-office-reception.jpg" alt="応接室へのSmartShade導入イメージ" loading="lazy" decoding="async"><figcaption>応接室</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-office-entrance.jpg" alt="エントランスと受付へのSmartShade導入イメージ" loading="lazy" decoding="async"><figcaption>エントランス・受付</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-office-showroom.jpg" alt="ショールームへのSmartShade導入イメージ" loading="lazy" decoding="async"><figcaption>大会議室・ショールーム</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-office-ceo.jpg" alt="" loading="lazy" decoding="async"><figcaption>社長室</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-office-executive.jpg" alt="" loading="lazy" decoding="async"><figcaption>役員室</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-office-meeting.jpg" alt="" loading="lazy" decoding="async"><figcaption>会議室</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-office-reception.jpg" alt="" loading="lazy" decoding="async"><figcaption>応接室</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-office-entrance.jpg" alt="" loading="lazy" decoding="async"><figcaption>エントランス・受付</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-office-showroom.jpg" alt="" loading="lazy" decoding="async"><figcaption>大会議室・ショールーム</figcaption></figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card poster-card market-card" data-num="02">
+            <div class="card-body">
+              <span class="number">STORE</span>
+              <h3>店舗改装 ＝ "集客"を売る</h3>
+              <p>飲食・美容・不動産などの窓を映像の集客装置に。閉店後も定休日も、窓が自動でPRする提案になります。</p>
+              <div class="case-examples">
+                <h4>導入事例・提案先</h4>
+                <div class="case-marquee" tabindex="0" aria-label="店舗改装の導入事例">
+                  <div class="case-track">
+                    <figure class="case-item"><img src="images/case-store-salon.jpg" alt="美容室とエステサロンへのSmartShade Vision導入イメージ" loading="lazy" decoding="async"><figcaption>美容室・エステサロン</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-store-restaurant.jpg" alt="飲食店へのSmartShade Vision導入イメージ" loading="lazy" decoding="async"><figcaption>飲食店</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-store-realestate.jpg" alt="不動産店舗へのSmartShade Vision導入イメージ" loading="lazy" decoding="async"><figcaption>不動産店舗</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-store-night.jpg" alt="ナイトシーン店舗へのSmartShade Vision導入イメージ" loading="lazy" decoding="async"><figcaption>ナイトシーンのお店</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-store-gym.jpg" alt="個人店舗やジムへのSmartShade Vision導入イメージ" loading="lazy" decoding="async"><figcaption>個人店舗・サロン</figcaption></figure>
+                    <figure class="case-item"><img src="images/case-store-showroom.jpg" alt="大型店舗とショールームへのSmartShade Vision導入イメージ" loading="lazy" decoding="async"><figcaption>大型店舗・ショールーム</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-store-salon.jpg" alt="" loading="lazy" decoding="async"><figcaption>美容室・エステサロン</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-store-restaurant.jpg" alt="" loading="lazy" decoding="async"><figcaption>飲食店</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-store-realestate.jpg" alt="" loading="lazy" decoding="async"><figcaption>不動産店舗</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-store-night.jpg" alt="" loading="lazy" decoding="async"><figcaption>ナイトシーンのお店</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-store-gym.jpg" alt="" loading="lazy" decoding="async"><figcaption>個人店舗・サロン</figcaption></figure>
+                    <figure class="case-item" aria-hidden="true"><img src="images/case-store-showroom.jpg" alt="" loading="lazy" decoding="async"><figcaption>大型店舗・ショールーム</figcaption></figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="markets-closing">パッと見ただけで凄さが伝わる。<br>だから提案が通る。</p>
+      </div>
+    </section>
+
+    <section class="section gold reveal" id="benefits" aria-labelledby="benefits-title">
+      <div class="inner">
+        <div class="section-title">
+          <p class="eyebrow">PARTNER MERIT</p>
+          <h2 id="benefits-title">御社がうれしい<span class="headline-break">3つのメリット</span></h2>
+        </div>
+        <div class="grid cards-3">
+          <article class="benefit-card" data-num="01">
+            <span class="number">01 / PROFIT</span>
+            <h3>利益を自由に乗せられる</h3>
+            <p>弊社の卸見積に、御社が自由に上乗せしてご提案いただけます。上乗せ分は、まるごと御社の利益に。</p>
+            <strong class="profit">目安は弊社見積の15〜20%。例えば10㎡のオフィス案件（弊社見積 約94万円）なら、約15〜19万円が御社の利益になります。</strong>
+            <p class="note">※例示です。上乗せ幅・最終価格は御社の裁量であり、利益を保証するものではありません。</p>
+          </article>
+          <article class="benefit-card" data-num="02">
+            <span class="number">02 / LOW LOAD</span>
+            <h3>面倒なことは一切ありません。</h3>
+            <p>現地調査・見積・施工・保証、映像案件の集客提案サポートまで弊社が担当。御社は「提案に1項目足す」だけです。</p>
+          </article>
+          <article class="benefit-card" data-num="03">
+            <span class="number">03 / DIFFERENCE</span>
+            <h3>提案しやすく売りやすい</h3>
+            <p>説明不要で写真を見せるだけで、パッと見て商材のスゴさが伝わるため、提案しやすい商品です。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="roles-title">
+      <div class="inner">
+        <div class="section-title">
+          <p class="eyebrow">FLOW</p>
+          <h2 id="roles-title" class="headline-compact">提案するだけで利益を生む</h2>
+          <p>新しい商材でも、御社に施工や保証の負担は増やしません。改装提案の中に「こんな選択肢もあります」と載せるところから始められます。</p>
+        </div>
+        <div class="partner-flow" aria-label="SmartShade取扱パートナーの流れ">
+          <div class="partner-flow-step is-partner">
+            <b>1</b>
+            <div><span>御社</span><p>「こんな選択肢も」と提案・ご紹介</p></div>
+          </div>
+          <div class="partner-flow-step">
+            <b>2</b>
+            <div><span>弊社</span><p>現地調査・見積作成</p></div>
+          </div>
+          <div class="partner-flow-step">
+            <b>3</b>
+            <div><span>弊社</span><p>専門の職人による施工</p></div>
+          </div>
+          <div class="partner-flow-step">
+            <b>4</b>
+            <div><span>弊社</span><p>アフターメンテナンス・保証</p></div>
+          </div>
+          <div class="partner-flow-step is-partner">
+            <b>5</b>
+            <div><span>御社</span><p>御社へのご入金</p></div>
+          </div>
+        </div>
+        <div class="partner-flow-summary">御社の大切なお客様だからこそ、<br>責任持って施工・アフターフォローいたします。</div>
+      </div>
+    </section>
+
+    <section class="section reveal" aria-labelledby="now-title">
+      <div class="inner">
+        <div class="section-title">
+          <p class="eyebrow">SALES POINT</p>
+          <h2 id="now-title">営業に使える特徴</h2>
+        </div>
+        <div class="two-tone">
+          <div class="cool-side">
+            <h3>SmartShadeが示す5つの強み</h3>
+            <ul class="feature-list">
+              <li>会議のプライバシーを、確実に守る</li>
+              <li>来客が"おっ"と反応する空間へ</li>
+              <li>1室が、会議室にも個室にもなる</li>
+              <li>ブラインドの手間から、解放される</li>
+              <li>フィルムは"精密機器"のため熟練の専門職人が施工</li>
+            </ul>
+          </div>
+          <div class="warm-side">
+            <h3>SmartShade Visionが示す5つの強み</h3>
+            <ul class="feature-list">
+              <li>ただの窓を集客装置に変えられます</li>
+              <li>街を歩くすべての人に届けられる</li>
+              <li>月額費などの固定費も0円（タダ）</li>
+              <li>自社のPRや求人募集を無料で流せる</li>
+              <li>窓を貸して広告収入を得ることも</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note" style="margin-top:14px;">※映像投影には別途プロジェクターの設置が必要です。フィルムのみのオフィス用途ではプロジェクターは不要です。</p>
+      </div>
+    </section>
+
+    <section class="section trust-section reveal" aria-labelledby="spec-title">
+      <div class="inner">
+        <div class="section-title">
+          <p class="eyebrow">PRODUCT TRUST</p>
+          <h2 id="spec-title" class="headline-compact">製品として、信頼できる理由</h2>
+        </div>
+        <div class="trust-panel">
+          <div class="trust-photo">
+            <!-- 画像指示: 自社ブランドとして品質基準を満たした工場・製造工程の写真。現状は images/restoration-empty-tenant.jpg を仮使用。推奨比率 16:10。 -->
+            <img src="images/restoration-empty-tenant.jpg" alt="品質基準を満たした工場でSmartShadeを製造している様子の仮画像" loading="lazy" decoding="async">
+            <div class="trust-photo-caption">品質基準を満たした工場で製造。</div>
+          </div>
+          <div class="trust-copy">
+            <p>提案先のお客様に安心して案内できるよう、製品品質・施工・保証まで一貫して支えます。</p>
+          </div>
+          <div class="trust-spec-grid">
+            <div class="trust-spec"><b>切替スピード</b><span>0.1秒以下</span></div>
+            <div class="trust-spec"><b>紫外線</b><span>約99%カット</span></div>
+            <div class="trust-spec"><b>耐久試験クリア済み</b><span>10年以上</span></div>
+            <div class="trust-spec"><b>メーカー保証</b><span>1年間</span></div>
+          </div>
+          <ul class="trust-checks">
+            <li>✔︎大型工事は、不要！</li>
+            <li>✔︎原状回復もしやすい</li>
+            <li>✔︎施工は 2〜3日で完了</li>
+          </ul>
+        </div>
+        <h3 class="invisible-title">見えないところでも働いている</h3>
+        <div class="invisible-grid" aria-label="見えないところで働く機能">
+          <article class="invisible-item">
+            <h4>遮熱</h4>
+            <p>空調負荷を軽減</p>
+            <div class="invisible-image">
+              <img src="images/benefit-heat.jpg" alt="遮熱により空調負荷を軽減するSmartShadeのイメージ" loading="lazy" decoding="async">
+            </div>
+          </article>
+          <article class="invisible-item">
+            <strong>99%</strong>
+            <p>有害紫外線をカット</p>
+            <div class="invisible-image">
+              <img src="images/benefit-uv.jpg" alt="有害紫外線を約99パーセントカットするSmartShadeのイメージ" loading="lazy" decoding="async">
+            </div>
+          </article>
+          <article class="invisible-item">
+            <h4>飛散防止</h4>
+            <p>万一の破損にも貢献</p>
+            <div class="invisible-image">
+              <img src="images/benefit-safety.jpg" alt="ガラス破損時の飛散防止に貢献するSmartShadeのイメージ" loading="lazy" decoding="async">
+            </div>
+          </article>
+        </div>
+        <p class="note" style="margin-top:14px;">※紫外線カット率は試験値です。耐久は所定条件での耐久試験クリアを示すもので、保証期間はメーカー保証1年です。設置環境により性能は異なる場合があります。</p>
+      </div>
+    </section>
+
+    <section class="section objection-section reveal" aria-labelledby="objection-title">
+      <div class="inner">
+        <div class="section-title">
+          <p class="eyebrow">BEFORE YOU HESITATE</p>
+          <h2 id="objection-title">「扱うのは大変そう…」<span class="headline-sub">その心配、先にお答えします。</span></h2>
+          <p>返信をためらう最後の不安になりやすい、手間と利益を先に整理します。</p>
+        </div>
+        <div class="objections">
+          <details open>
+            <summary><span class="q-prefix">Q.</span> 新しい商材は、手間が増えそう</summary>
+            <p><span class="a-prefix">A.</span>増えません。御社は改装提案に1項目足すだけ。現地調査・見積・施工・保証・映像の集客提案サポートまで、面倒はすべて弊社が引き受けます。</p>
+          </details>
+          <details open>
+            <summary><span class="q-prefix">Q.</span> 実際いくら儲かるの?</summary>
+            <p><span class="a-prefix">A.</span>上乗せ分がまるごと御社の利益。目安は弊社見積の15〜20%。例えば10㎡のオフィス案件なら約15〜19万円が御社の利益に（※例・御社の裁量。利益を保証するものではありません）。改装一式に組み込むから、価格も気になりにくい商材です。</p>
+          </details>
+          <details>
+            <summary><span class="q-prefix">Q.</span> うちのお客様に本当に合う?</summary>
+            <p><span class="a-prefix">A.</span>オフィスにも店舗にも。案件に応じて出せるので、御社の既存のお客様にそのまま提案できます。まずは実物イメージを見て、刺さりそうか確かめてください。</p>
+          </details>
+          <details>
+            <summary><span class="q-prefix">Q.</span> 知らない会社と、いきなり大きな話はちょっと…</summary>
+            <p><span class="a-prefix">A.</span>大丈夫です。まずは資料を見る・話を聞くところから。今の段階で難しい契約は必要ありません。</p>
+          </details>
+          <details>
+            <summary><span class="q-prefix">Q.</span> 代理店契約は必要ですか？</summary>
+            <p><span class="a-prefix">A.</span>最初は不要です。案件が出たとき弊社へお繋ぎいただくだけでも構いません。本格取扱の条件は個別相談です。</p>
+          </details>
+          <details>
+            <summary><span class="q-prefix">Q.</span> 価格に縛りはありますか？</summary>
+            <p><span class="a-prefix">A.</span>弊社の卸価格が下限です。上乗せ幅は御社の裁量にお任せします。</p>
+          </details>
+          <details>
+            <summary><span class="q-prefix">Q.</span> お客様への対応は誰がやりますか？</summary>
+            <p><span class="a-prefix">A.</span>現地調査・施工・保証・技術対応はすべて弊社。御社は「提案」と「お繋ぎ」に集中いただけます。</p>
+          </details>
+          <details>
+            <summary><span class="q-prefix">Q.</span> サンプルや提案資料はありますか？</summary>
+            <p><span class="a-prefix">A.</span>オフィス版・店舗版の提案資料があります。サンプルも要相談です。</p>
+          </details>
+          <details>
+            <summary><span class="q-prefix">Q.</span> 対応エリアはどこまで？</summary>
+            <p><span class="a-prefix">A.</span>現在は関東中心です。エリアは要相談です。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark reveal" id="cta" aria-labelledby="cta-title">
+      <div class="inner">
+        <div class="footer-box">
+          <p class="eyebrow">NEXT STEP</p>
+          <h2 id="cta-title">まずは「詳しく聞きたい」<span class="headline-sub">の一言で大丈夫です。</span></h2>
+          <p class="lead">ご興味があれば、お送りしたメールにそのままご返信ください。折り返し、資料と具体的な進め方をご案内します。売り込みはいたしません。</p>
+          <span class="cta-display gold-cta" tabindex="0" role="note">お送りしたメールにご返信ください</span>
+        </div>
+        <p class="footer-meta">株式会社LIVELY ／ SmartShade事業部<br>〒330-0854 埼玉県さいたま市大宮区桜木町2-3 大宮マルイ7階<br>［担当者名・連絡先メール・電話・特商法/プライバシー］<br>※本ページは内装・リフォーム会社さま向けのご案内です</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      document.querySelectorAll('img').forEach((img) => {
+        img.addEventListener('error', () => img.classList.add('image-missing'), { once: true });
+      });
+
+      const demo = document.getElementById('glassDemo');
+      const toggle = document.getElementById('toggleGlass');
+      const stateLabel = document.getElementById('stateLabel');
+      if (demo && toggle && stateLabel) {
+        const setState = (isOn) => {
+          demo.classList.toggle('is-on', isOn);
+          toggle.setAttribute('aria-checked', String(isOn));
+          stateLabel.textContent = isOn ? 'ON / 透明' : 'OFF / 不透明';
+        };
+        toggle.addEventListener('click', () => {
+          setState(toggle.getAttribute('aria-checked') !== 'true');
+        });
+      }
+
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const modeSwipe = document.querySelector('.mode-swipe');
+      const modeCards = Array.from(document.querySelectorAll('.mode-card'));
+      const modeDots = Array.from(document.querySelectorAll('.mode-dot'));
+      const modePrev = document.querySelector('.mode-nav.prev');
+      const modeNext = document.querySelector('.mode-nav.next');
+      if (modeSwipe && modeCards.length && modeDots.length) {
+        let activeMode = 0;
+        const scrollToMode = (index) => {
+          const nextIndex = (index + modeCards.length) % modeCards.length;
+          modeCards[nextIndex].scrollIntoView({
+            behavior: reduceMotion ? 'auto' : 'smooth',
+            block: 'nearest',
+            inline: 'center'
+          });
+          setActiveMode(nextIndex);
+        };
+        const setActiveMode = (index) => {
+          activeMode = index;
+          modeDots.forEach((dot, dotIndex) => {
+            dot.classList.toggle('is-active', dotIndex === index);
+          });
+        };
+        const syncModeFromScroll = () => {
+          const swipeCenter = modeSwipe.scrollLeft + (modeSwipe.clientWidth / 2);
+          let nearestIndex = 0;
+          let nearestDistance = Infinity;
+          modeCards.forEach((card, index) => {
+            const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+            const distance = Math.abs(cardCenter - swipeCenter);
+            if (distance < nearestDistance) {
+              nearestDistance = distance;
+              nearestIndex = index;
+            }
+          });
+          setActiveMode(nearestIndex);
+        };
+        modePrev?.addEventListener('click', () => scrollToMode(activeMode - 1));
+        modeNext?.addEventListener('click', () => scrollToMode(activeMode + 1));
+        modeDots.forEach((dot, index) => dot.addEventListener('click', () => scrollToMode(index)));
+        modeSwipe.addEventListener('scroll', () => window.requestAnimationFrame(syncModeFromScroll), { passive: true });
+      }
+
+      const fvSlides = document.querySelectorAll('.fv-slide');
+      if (!reduceMotion && fvSlides.length > 1) {
+        let currentSlide = 0;
+        window.setInterval(() => {
+          fvSlides[currentSlide].classList.remove('is-active');
+          currentSlide = (currentSlide + 1) % fvSlides.length;
+          fvSlides[currentSlide].classList.add('is-active');
+        }, 2000);
+      }
+
+      const caseMarquees = Array.from(document.querySelectorAll('.case-marquee'));
+      if (!reduceMotion && caseMarquees.length) {
+        caseMarquees.forEach((marquee) => {
+          let pauseTimer;
+          let isPaused = false;
+          let isDragging = false;
+          let startX = 0;
+          let startScrollLeft = 0;
+          let lastTime = performance.now();
+          let scrollCarry = 0;
+
+          const pause = () => {
+            isPaused = true;
+            marquee.classList.add('is-user-scrolling');
+            window.clearTimeout(pauseTimer);
+          };
+          const resumeSoon = () => {
+            window.clearTimeout(pauseTimer);
+            pauseTimer = window.setTimeout(() => {
+              isPaused = false;
+              marquee.classList.remove('is-user-scrolling');
+            }, 1600);
+          };
+          const loopScroll = () => {
+            const loopPoint = marquee.scrollWidth / 2;
+            if (loopPoint > 0 && marquee.scrollLeft >= loopPoint) {
+              marquee.scrollLeft -= loopPoint;
+            }
+          };
+
+          marquee.addEventListener('pointerdown', (event) => {
+            pause();
+            if (event.pointerType === 'mouse') {
+              isDragging = true;
+              startX = event.clientX;
+              startScrollLeft = marquee.scrollLeft;
+              marquee.setPointerCapture?.(event.pointerId);
+            }
+          });
+          marquee.addEventListener('pointermove', (event) => {
+            if (!isDragging) return;
+            event.preventDefault();
+            marquee.scrollLeft = startScrollLeft - (event.clientX - startX);
+            loopScroll();
+          });
+          ['pointerup', 'pointercancel', 'pointerleave'].forEach((eventName) => {
+            marquee.addEventListener(eventName, () => {
+              isDragging = false;
+              resumeSoon();
+            });
+          });
+          marquee.addEventListener('wheel', () => {
+            pause();
+            resumeSoon();
+          }, { passive: true });
+          marquee.addEventListener('touchstart', pause, { passive: true });
+          marquee.addEventListener('touchend', resumeSoon, { passive: true });
+          marquee.addEventListener('touchcancel', resumeSoon, { passive: true });
+
+          const animate = (now) => {
+            const delta = Math.min(now - lastTime, 48);
+            lastTime = now;
+            if (!isPaused && marquee.scrollWidth > marquee.clientWidth) {
+              scrollCarry += delta * 0.075;
+              const scrollStep = Math.floor(scrollCarry);
+              if (scrollStep > 0) {
+                marquee.scrollLeft += scrollStep;
+                scrollCarry -= scrollStep;
+                loopScroll();
+              }
+            }
+            window.requestAnimationFrame(animate);
+          };
+          window.requestAnimationFrame(animate);
+        });
+      }
+
+      const revealItems = document.querySelectorAll('.reveal');
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        revealItems.forEach((item) => item.classList.add('is-visible'));
+        return;
+      }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach((item) => observer.observe(item));
+    })();
+  </script>
+</body>
+</html>
