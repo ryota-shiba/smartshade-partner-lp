@@ -1992,6 +1992,7 @@
       const caseMarquees = Array.from(document.querySelectorAll('.case-marquee'));
       if (!reduceMotion && caseMarquees.length) {
         caseMarquees.forEach((marquee) => {
+          const track = marquee.querySelector('.case-track');
           let pauseTimer;
           let isPaused = false;
           let isDragging = false;
@@ -1999,6 +2000,7 @@
           let startScrollLeft = 0;
           let lastTime = performance.now();
           let scrollCarry = 0;
+          let scrollTicking = false;
 
           const pause = () => {
             isPaused = true;
@@ -2012,11 +2014,27 @@
               marquee.classList.remove('is-user-scrolling');
             }, 1600);
           };
+          const getLoopPoint = () => {
+            const items = track ? Array.from(track.children) : [];
+            const firstDuplicate = items[Math.floor(items.length / 2)];
+            return firstDuplicate ? firstDuplicate.offsetLeft : marquee.scrollWidth / 2;
+          };
           const loopScroll = () => {
-            const loopPoint = marquee.scrollWidth / 2;
+            const loopPoint = getLoopPoint();
             if (loopPoint > 0 && marquee.scrollLeft >= loopPoint) {
               marquee.scrollLeft -= loopPoint;
             }
+            if (loopPoint > 0 && marquee.scrollLeft < 0) {
+              marquee.scrollLeft += loopPoint;
+            }
+          };
+          const requestLoopCheck = () => {
+            if (scrollTicking) return;
+            scrollTicking = true;
+            window.requestAnimationFrame(() => {
+              loopScroll();
+              scrollTicking = false;
+            });
           };
 
           marquee.addEventListener('pointerdown', (event) => {
@@ -2047,6 +2065,7 @@
           marquee.addEventListener('touchstart', pause, { passive: true });
           marquee.addEventListener('touchend', resumeSoon, { passive: true });
           marquee.addEventListener('touchcancel', resumeSoon, { passive: true });
+          marquee.addEventListener('scroll', requestLoopCheck, { passive: true });
 
           const animate = (now) => {
             const delta = Math.min(now - lastTime, 48);
