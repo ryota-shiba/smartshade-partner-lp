@@ -1033,7 +1033,7 @@
       overflow: hidden;
     }
     .compare-head > div {
-      padding: 14px 12px;
+      padding: 10px;
       background: #F5F8F9;
       text-align: center;
     }
@@ -1043,6 +1043,7 @@
     }
     .compare-head span {
       display: block;
+      margin-top: 10px;
       color: var(--muted);
       font-family: var(--latin);
       font-size: .66rem;
@@ -1061,22 +1062,37 @@
     .compare-head .is-vision strong {
       color: #D3208F;
     }
+    .compare-photo {
+      margin: 0;
+    }
+    .compare-photo .media {
+      aspect-ratio: 4 / 3;
+      border-radius: 3px;
+      box-shadow: none;
+    }
+    .compare-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     .compare-row {
       display: grid;
-      grid-template-columns: 86px 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       background: var(--white);
     }
     .compare-label {
       display: grid;
-      place-items: center;
-      padding: 12px 8px;
+      grid-column: 1 / -1;
+      align-items: center;
+      justify-content: start;
+      padding: 8px 12px;
       background: var(--slate);
       color: var(--white);
       font-family: var(--heading);
       font-size: .78rem;
       font-weight: 900;
       line-height: 1.35;
-      text-align: center;
+      text-align: left;
     }
     .compare-cell {
       padding: 13px 12px;
@@ -1602,7 +1618,6 @@
       .mode-swipe { grid-auto-columns: minmax(56%, 1fr); }
       .mode-nav { width: 42px; height: 58px; }
       .case-item { flex-basis: 300px; }
-      .compare-row { grid-template-columns: 104px 1fr 1fr; }
       .compare-cell { font-size: .94rem; }
       .fv-poster { gap: 16px; }
       .fv-copy-wrap { padding-right: 34px; padding-left: 34px; }
@@ -1816,10 +1831,22 @@
         <div class="vision-compare" aria-label="デジタルサイネージとSmartShade Visionの比較">
           <div class="compare-head" aria-hidden="true">
             <div>
+              <figure class="compare-photo">
+                <div class="media">
+                  <!-- 画像指示: 一般的なデジタルサイネージのイメージ。店舗内や店頭に置いた広告表示モニター。推奨比率 4:3。差し替え候補: images/signage-digital.jpg -->
+                  <img src="images/case-store-night.jpg" alt="" loading="lazy" decoding="async">
+                </div>
+              </figure>
               <span>Digital Signage</span>
               <strong>一般的な<br>デジタルサイネージ</strong>
             </div>
             <div class="is-vision">
+              <figure class="compare-photo">
+                <div class="media">
+                  <!-- 画像指示: SmartShade Visionのイメージ。店舗の窓全面に映像を投影し、通行人へPRしている様子。推奨比率 4:3。 -->
+                  <img src="images/market-storefront-vision.jpg" alt="" loading="lazy" decoding="async">
+                </div>
+              </figure>
               <span>SmartShade Vision</span>
               <strong>窓を活かす<br>SmartShade Vision</strong>
             </div>
