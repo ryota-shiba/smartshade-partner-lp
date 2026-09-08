@@ -1013,6 +1013,102 @@
       line-height: 1.45;
       text-align: center;
     }
+    .signage-section {
+      background: var(--white);
+    }
+    .vision-compare {
+      display: grid;
+      gap: 12px;
+    }
+    .compare-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      align-items: stretch;
+    }
+    .compare-head > div,
+    .compare-row {
+      border-radius: 4px;
+      border: 1px solid rgba(20,33,42,.12);
+      overflow: hidden;
+    }
+    .compare-head > div {
+      padding: 14px 12px;
+      background: #F5F8F9;
+      text-align: center;
+    }
+    .compare-head .is-vision {
+      border-color: rgba(211,32,143,.34);
+      background: #FFF3FA;
+    }
+    .compare-head span {
+      display: block;
+      color: var(--muted);
+      font-family: var(--latin);
+      font-size: .66rem;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    .compare-head strong {
+      display: block;
+      margin-top: 6px;
+      font-family: var(--heading);
+      font-size: .98rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+    .compare-head .is-vision strong {
+      color: #D3208F;
+    }
+    .compare-row {
+      display: grid;
+      grid-template-columns: 86px 1fr 1fr;
+      background: var(--white);
+    }
+    .compare-label {
+      display: grid;
+      place-items: center;
+      padding: 12px 8px;
+      background: var(--slate);
+      color: var(--white);
+      font-family: var(--heading);
+      font-size: .78rem;
+      font-weight: 900;
+      line-height: 1.35;
+      text-align: center;
+    }
+    .compare-cell {
+      padding: 13px 12px;
+      color: var(--muted);
+      font-size: .88rem;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+    .compare-cell + .compare-cell {
+      border-left: 1px solid rgba(20,33,42,.1);
+    }
+    .compare-cell.is-vision {
+      color: var(--ink);
+      background: linear-gradient(180deg, rgba(255,243,250,.75), rgba(255,255,255,0));
+      font-weight: 900;
+    }
+    .compare-cell.is-vision b {
+      color: #D3208F;
+    }
+    .vision-punch {
+      margin: 20px auto 0;
+      max-width: 560px;
+      color: var(--slate);
+      font-family: var(--heading);
+      font-size: clamp(1.16rem, 4.8vw, 1.72rem);
+      font-weight: 900;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .vision-punch span {
+      color: #D3208F;
+    }
     .number {
       color: var(--teal);
       font-family: var(--latin);
@@ -1506,6 +1602,8 @@
       .mode-swipe { grid-auto-columns: minmax(56%, 1fr); }
       .mode-nav { width: 42px; height: 58px; }
       .case-item { flex-basis: 300px; }
+      .compare-row { grid-template-columns: 104px 1fr 1fr; }
+      .compare-cell { font-size: .94rem; }
       .fv-poster { gap: 16px; }
       .fv-copy-wrap { padding-right: 34px; padding-left: 34px; }
       .fv-photo,
@@ -1704,6 +1802,52 @@
           </article>
         </div>
         <p class="markets-closing">パッと見ただけで凄さが伝わる。<br>だから提案が通る。</p>
+      </div>
+    </section>
+
+    <section class="section signage-section reveal" aria-labelledby="signage-title">
+      <div class="inner">
+        <div class="section-title">
+          <p class="eyebrow">NOT SIGNAGE</p>
+          <h2 id="signage-title" class="headline-compact">デジタルサイネージとは別物。</h2>
+          <p>SmartShade Visionは、モニターを置く提案ではありません。店舗の窓そのものを、昼は目隠しに、夜はPR面に変える提案です。</p>
+        </div>
+
+        <div class="vision-compare" aria-label="デジタルサイネージとSmartShade Visionの比較">
+          <div class="compare-head" aria-hidden="true">
+            <div>
+              <span>Digital Signage</span>
+              <strong>一般的な<br>デジタルサイネージ</strong>
+            </div>
+            <div class="is-vision">
+              <span>SmartShade Vision</span>
+              <strong>窓を活かす<br>SmartShade Vision</strong>
+            </div>
+          </div>
+
+          <div class="compare-row">
+            <div class="compare-label">見え方</div>
+            <div class="compare-cell">店内にモニターを置くため、機器感が出やすい。</div>
+            <div class="compare-cell is-vision"><b>窓全面</b>に映せるため、外から見たインパクトが大きい。</div>
+          </div>
+          <div class="compare-row">
+            <div class="compare-label">使う場所</div>
+            <div class="compare-cell">置き場所や配線、店内レイアウトの調整が必要。</div>
+            <div class="compare-cell is-vision">もともとある<b>窓を活用</b>。店舗改装の提案に組み込みやすい。</div>
+          </div>
+          <div class="compare-row">
+            <div class="compare-label">役割</div>
+            <div class="compare-cell">映像を流す役割が中心。</div>
+            <div class="compare-cell is-vision"><b>透明・目隠し・投影</b>を切り替え。営業時間中も閉店後も使える。</div>
+          </div>
+          <div class="compare-row">
+            <div class="compare-label">提案価値</div>
+            <div class="compare-cell">広告設備として見られやすい。</div>
+            <div class="compare-cell is-vision">内装の質感と集客を同時に変える、<b>改装提案の新しい切り口</b>になる。</div>
+          </div>
+        </div>
+
+        <p class="vision-punch">ただ映像を置くのではなく、<br><span>窓そのものを集客装置に変える。</span></p>
       </div>
     </section>
 
